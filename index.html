@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>What The Weather</title>
+    <!-- Linking BoxIcon for Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="theme">
+    <div>
+      <button id="toggle-btn" class="dark-mode-toggle">Dark mode</button>
+    </div>
+
+    <div class="wrapper">
+      <header class="theme">
+        <i class="bx bx-left-arrow-alt"></i>Weather App
+        <div class="clock">
+          <a
+            class="clock-app-link"
+            target="”_blank”"
+            href="https://clock-rahul.netlify.app/"
+            ><i class="fa-solid fa-clock"></i
+          ></a>
+
+          <a
+            class="clock-app-link"
+            target="”_blank”"
+            href="https://clock-rahul.netlify.app/"
+          >
+            <span id="timeDisplay"></span
+          ></a>
+        </div>
+      </header>
+      <section class="input-part">
+        <p class="info-txt"></p>
+        <div class="content">
+          <input
+            type="text"
+            spellcheck="false"
+            placeholder="Search your City or use Zip Code "
+            required
+            id="inputCityName"
+          />
+          <button id="get-user-enter-location">
+            <i class="fa-solid fa-magnifying-glass"></i> Search
+          </button>
+          <div class="separator"></div>
+
+          <button id="get-device-location">Get Current Location</button>
+        </div>
+      </section>
+      <section class="weather-part">
+        <img src="" alt="weather-icon" />
+        <div class="temp">
+          <span class="numb"></span>
+          <span class="deg">°</span>C
+        </div>
+        <div class="weather"></div>
+        <div class="location">
+          <i class="bx bx-map"></i>
+          <span>_, _</span>
+        </div>
+
+        <!-- btns show-more & show-less to show and hide more deatils about weather -->
+        <button id="show-more">
+          Show more <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <button id="show-less">
+          <i class="fa-solid fa-chevron-up"></i> Show less
+        </button>
+
+        <div class="bottom-details">
+          <div class="column deels">
+            <i class="bx bxs-thermometer"></i>
+            <div class="details">
+              <div class="temp">
+                <span class="numb-2"></span>
+                <span class="deg">°</span>C
+              </div>
+              <p>Feels like</p>
+            </div>
+          </div>
+          <div class="column humidity">
+            <i class="bx bxs-droplet-half"></i>
+            <div class="details">
+              <span></span>
+              <p>Humidity</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- // secpomds -->
+        <div class="bottom-details" id="showMoreInfo">
+          <div class="column deels">
+            <i
+              class="fa-solid fa-arrow-down-wide-short decreaseFontSizeIcons"
+            ></i>
+            <div class="details">
+              <div class="temp">
+                <span class="pressure"> </span>
+                <span class="deg"> &nbsp;mb</span>
+              </div>
+              <p>Pressure</p>
+            </div>
+          </div>
+
+          <div class="column humidity">
+            <i class="fa-solid fa-wind decreaseFontSizeIcons"></i>
+            <div class="details">
+              <span id="wind-speed"></span>
+              <span class="deg">km/h</span>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- // secpomds -->
+        <div class="bottom-details" id="showMore_More_Info">
+          <div class="column deels">
+            <i class="fa-solid fa-temperature-low decreaseFontSizeIcons"></i>
+            <div class="details">
+              <div class="temp">
+                <span id="min-temp"></span>
+                <span class="deg">&nbsp;°</span>C
+              </div>
+              <p>Min temperature</p>
+            </div>
+          </div>
+
+          <div class="column humidity">
+            <i class="fa-solid fa-temperature-high decreaseFontSizeIcons"></i>
+            <div class="details">
+              <span id="max-temp"></span>
+              <span class="deg">&nbsp;°</span>C
+              <span></span>
+              <p>Max temperature</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="app.js" defer type="module"></script>
+  </body>
+</html>
