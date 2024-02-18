@@ -11,11 +11,11 @@
 # What is used to make this possible
 
 - OpenWeatherMap Api is been used to show the data
-- promise are use to asynchronous get weather details to frontened 
+- promise are use to asynchronous get weather details to frontened
 
 # Live Demo 👁️
 
-https://routine-control.netlify.app/
+https://rahulporel.github.io/What-The-Weather/
 
 # Snapshot of What the Weather
 
@@ -32,7 +32,6 @@ https://routine-control.netlify.app/
 # Features that are currently in development
 
 - 5 days weather forecast deatils comming soon!
-
 
 # Author
 
