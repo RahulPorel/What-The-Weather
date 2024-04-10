@@ -16,6 +16,8 @@
 # Live Demo 👁️
 
 https://rahulporel.github.io/What-The-Weather/
+What the Weather v2 Live demo: -  https://whats-the-weather-rahul.netlify.app/
+
 
 # Snapshot of What the Weather
 
@@ -31,8 +33,7 @@ https://rahulporel.github.io/What-The-Weather/
 
 # Features that are currently in development
 
-- 5 days weather forecast deatils comming soon!
+- What the Weather v2 available here
+  https://whats-the-weather-rahul.netlify.app/
 
-# Author
 
-Rahul Porel
